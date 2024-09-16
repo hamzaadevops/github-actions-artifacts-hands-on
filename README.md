@@ -1,1 +1,1 @@
-# GitHub Actions Lab 1
+# artifacts-hands-on
