@@ -3,8 +3,9 @@ name: Workflow Demo
 on: 
   push
 
-# env:
-#   ACCESS_ID: ${{ vars.ACCESS_ID }}
+env:
+  ACCESS_ID: ${{ secretc.AK }}
+  SECRET_KEY: ${{ secrets.SK }}
 
 jobs:
   build:
@@ -13,3 +14,5 @@ jobs:
     steps:
     - name: Echo ACCESS_ID
       run: echo $ACCESS_ID
+    - name: Echo SECRET_KEY
+      run: echo $SECRET_KEY
